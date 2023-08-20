@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+*{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.card-section {
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 40px 15px;
+  opacity: 1;
+  border-radius: 20px;
+}
+
+.icon-heading {
+  font-size: 24px;
+}
+
+.carousel-info {
+  padding: 20px;
+  margin-bottom: 2px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  height: 90%;
+  box-shadow: 0px 6px 4px #00000029;
+}
+
+.outer-container {
+  background-color: #F8FAFC;
+  padding: 20px;
+  box-shadow: 0px 16px 48px #00000029;
+  border-radius: 42px;
+}
+
+
+.font-size {
+  font-size: 13px;
+}
+
+
+.inner-container {
+  padding-left: 60px;
+  padding-right: 40px;
+
+}
+
+.carousel-control-prev, .carousel-control-next  {
+  background-color: #FFFFFF;
+  top: 45%;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  box-shadow:  0px 16px 48px #00000029;
+}
+
+.carousel-control-prev {
+  left: -70px;
+}
+
+.carousel-control-next {
+  right: -70px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./img/icons8-back-30.png);
+}
+
+.carousel-control-next-icon {
+  background-image: url(./img/icons8-forward-30.png);
+}
+
+.company-logo-container {
+  margin-top: 300px;
+}
+.container-heading {
+  margin: 140px 0;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-container {
+    justify-content: center;
+  }
+  .navbar-brand-logo {
+    display: none;
+  }
+  .nav-item {
+    margin: 0 30px;
+  }
+  .outer-container {
+    height: 360px;
+    position: relative;
+  }
+
+  .inner-container {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    z-index: 1;
+  }
+  .carousel-control-prev, .carousel-control-next  {
+    background-color: #FFFFFF;
+    width: 62px;
+    height: 62px;
+    top: 100px;
+    border-radius: 50%;
+    box-shadow:  0px 16px 48px #00000029;
+    
+  }
+  
+}
+
+footer {
+  margin-top: 180px;
+  height: 360px;
+  background-color: black;
+  position: relative;
+}
+
+footer> div {
+  position: absolute;
+  left: 70%;
+  top: 70%;
+}
+
+footer> div>div {
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+  border: solid #FFFFFF ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .brand-logo{
+    display: none;
+  }
+
+  .hero-image {
+    position: absolute;
+    top: -60px;
+    filter: blur(4px);
+    z-index: -1;
+    height: 500px;
+    width: 500px;
+  }
+  .hero-container {
+    margin-top: 20px;
+  }
+ 
+}
+
+@media(max-width: 767px) {
+  .carousel-info {
+    height: auto;
+  }
+
+  .inner-container {
+    padding: 20px;
+  }
+}
